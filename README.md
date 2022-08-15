@@ -14,10 +14,20 @@ Template plugin for Commonlib SSE-NG development
 	* Add the environment variable `CommonLibSSEPath_NG` with the value as the path to the folder containing CommonLibSSE-NG
   
 ## Building
-```
-git clone https://github.com/D7ry/TemplateProject_NG
-cd TemplateProject_NG
 
+Run the following command:
+
+`git clone https://github.com/D7ry/TemplateProject_NG`
+
+relocate to `TemplateProject_NG` directory.
+
+in `CMakeLists.txt` and `vcpkg.json`, change `templateproject` to the desired project name.
+
+Run the following command:
+
+```
 cmake --preset vs2022-windows
 cmake --build build --config Release
 ```
+
+relocate to `build` directory, open generated .sln file with Visual Studio 2022 to start editing.
