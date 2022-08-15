@@ -27,7 +27,6 @@ Run the following command:
 
 ```
 cmake --preset vs2022-windows
-cmake --build build --config Release
 ```
 
 relocate to `build` directory, open generated .sln file with Visual Studio 2022 to start editing.
