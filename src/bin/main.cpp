@@ -46,7 +46,7 @@ namespace
 		log->flush_on(level);
 
 		spdlog::set_default_logger(std::move(log));
-		spdlog::set_pattern("%g(%#): [%^%l%$] %v"s);
+		spdlog::set_pattern("%s(%#): [%^%l%$] %v"s);
 	}
 }
 
@@ -95,6 +95,7 @@ extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 
 	v.UsesAddressLibrary(true);
 	v.CompatibleVersions({ SKSE::RUNTIME_SSE_LATEST });
+	v.HasNoStructUse(true);
 
 	return v;
 }();
